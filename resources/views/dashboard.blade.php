@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <h3>{{ $blog->title }}</h3>
                     <p>{{ $blog->body }} <br />
-                       Date : 
+                       Date : {{ $blog->updated_at }}
                     </p>
                 </div>
                 <div class="card-footer background-colorffffff pt-3 pb-3">
