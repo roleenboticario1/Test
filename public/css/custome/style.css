@@ -42,6 +42,10 @@
 	border: 1px solid #ffff !important;
 }
 
+.border1-solid-none{
+  border: 1px solid transparent; !important;
+}
+
 .border-buttom-color9e9e9e{
 	border-bottom-color: #9e9e9e !important;
 }
@@ -59,7 +63,7 @@
 }
 
 .form-control:focus {
-  border-color: none !important;
+  border-color: transparent; !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
@@ -105,4 +109,5 @@ textarea::placeholder {
 .text-size12{
 	font-size: 12px !important;
 }
+
 
