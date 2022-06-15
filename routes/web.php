@@ -28,5 +28,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/blogs', [BlogController::class, 'index']);
     Route::get('/delete/{id}', [BlogController::class, 'destroy']);
     Route::get('/edit/{id}', [BlogController::class, 'edit']);
-    Route::post('/update/{id}', [BlogController::class, 'update']);
+    Route::put('/update/{id}', [BlogController::class, 'update']);
 });

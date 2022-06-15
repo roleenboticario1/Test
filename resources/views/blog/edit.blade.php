@@ -18,6 +18,7 @@
            <h2>Edit Post - {{ $post->title }}</h2>
            <form action="{{ url('update',$post->id) }}" method="POST">
             @csrf
+            @method('PUT')
            <div class="form-group mt-4">
             <label class="text-size12 color9eb2cb mb-3">Enter New Title</label>
             <input type="text" class="form-control transition-none background-color-transparent border1-solid-none border-buttom-color4caf50 padding0 border-radius-none" name="title" value="{{ $post->title }} - Edited" placeholder="{{ $post->title }} - Edited">
